@@ -795,6 +795,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 95px;
 }
 
+.dashboard .news-2 h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dashboard .news-2 p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.dashboard .news h4 a {
+  transition: 0.3s;
+}
+
 /* Recent Sales */
 .dashboard .recent-sales {
   font-size: 14px;
