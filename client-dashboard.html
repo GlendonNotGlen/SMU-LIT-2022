@@ -49,12 +49,32 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="client-dashboard.html" class="logo d-flex align-items-center">
+        <a href="lawyer-dashboard.html" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="" />
           <span class="d-none d-lg-block">Jura</span>
         </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
       <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
 
       <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
@@ -76,168 +96,69 @@
             >
               <li class="dropdown-header">
                 You have 4 new notifications
-                <a href="#"
-                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
-                    >View all</span
-                  ></a
-                >
               </li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-
+              <a href="index.html">
               <li class="notification-item">
                 <i class="bi bi-exclamation-circle text-warning"></i>
                 <div>
-                  <h4>Lorem Ipsum</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <h4>Case File #12351</h4>
+                  <p>Lawyer of Case File #12351 has requested more documents</p>
                   <p>30 min. ago</p>
                 </div>
               </li>
+              </a>
 
               <li>
                 <hr class="dropdown-divider" />
               </li>
-
+              <a href="index.html">
               <li class="notification-item">
                 <i class="bi bi-x-circle text-danger"></i>
                 <div>
-                  <h4>Atque rerum nesciunt</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <h4>Case File #56567</h4>
+                  <p>Case File #56567 has been rejected</p>
                   <p>1 hr. ago</p>
                 </div>
               </li>
-
+              </a>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-
+              <a href="index.html">
               <li class="notification-item">
                 <i class="bi bi-check-circle text-success"></i>
                 <div>
-                  <h4>Sit rerum fuga</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <h4>Case File #69420</h4>
+                  <p>Case File #69420 is recently completed</p>
                   <p>2 hrs. ago</p>
                 </div>
               </li>
-
+              </a>
               <li>
                 <hr class="dropdown-divider" />
               </li>
-
+              <a href="index.html">
               <li class="notification-item">
                 <i class="bi bi-info-circle text-primary"></i>
                 <div>
-                  <h4>Dicta reprehenderit</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <h4>Case File #12345</h4>
+                  <p>Case File #12345 is successfully submitted</p>
                   <p>4 hrs. ago</p>
                 </div>
               </li>
-
+              </a>
               <li>
                 <hr class="dropdown-divider" />
               </li>
               <li class="dropdown-footer">
-                <a href="#">Show all notifications</a>
               </li>
             </ul>
             <!-- End Notification Dropdown Items -->
           </li>
           <!-- End Notification Nav -->
-
-          <li class="nav-item dropdown">
-            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-              <i class="bi bi-chat-left-text"></i>
-              <span class="badge bg-success badge-number">3</span> </a
-            ><!-- End Messages Icon -->
-
-            <ul
-              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
-            >
-              <li class="dropdown-header">
-                You have 3 new messages
-                <a href="#"
-                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
-                    >View all</span
-                  ></a
-                >
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-1.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>Maria Hudson</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>4 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-2.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>Anna Nelson</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>6 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="message-item">
-                <a href="#">
-                  <img
-                    src="assets/img/messages-3.jpg"
-                    alt=""
-                    class="rounded-circle"
-                  />
-                  <div>
-                    <h4>David Muldon</h4>
-                    <p>
-                      Velit asperiores et ducimus soluta repudiandae labore
-                      officia est ut...
-                    </p>
-                    <p>8 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-
-              <li class="dropdown-footer">
-                <a href="#">Show all messages</a>
-              </li>
-            </ul>
-            <!-- End Messages Dropdown Items -->
-          </li>
-          <!-- End Messages Nav -->
-
-          <!-- Profile Nav -->
           <li class="nav-item dropdown pe-3">
             <a
               class="nav-link nav-profile d-flex align-items-center pe-0"
@@ -259,7 +180,7 @@
             >
               <li class="dropdown-header">
                 <h6>Sylvester Choy</h6>
-                <span>Cybersecurity Engineer</span>
+                <span>Cybersecuirty Engineer</span>
               </li>
               <li>
                 <hr class="dropdown-divider" />
@@ -324,17 +245,15 @@
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="lawyer-dashboard.html">
-            <i class="bi bi-envelope"></i>
-            <span>Submit a new request</span>
+          <a class="nav-link" href="client-dashboard.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
           </a>
         </li>
-        <!-- End Dashboard Nav -->
-
         <li class="nav-item">
-          <a class="nav-link collapsed" href="request-viewing.html">
-            <i class="bi bi-collection"></i>
-            <span>View previous requests</span>
+          <a class="nav-link collapsed" href="request-submission.html">
+            <i class="bi bi-envelope"></i>
+            <span>Submit a new request</span>
           </a>
         </li>
         <!-- End Blank Page Nav -->
@@ -344,97 +263,293 @@
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Submit a new request</h1>
+        <h1>Dashboard</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="lawyer-dashboard.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </nav>
       </div>
       <!-- End Page Title -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Fill up the form below and the legal department will get back to you.</h5>
 
-          <!-- Floating Labels Form -->
-          <form class="row g-3">
-            <div class="col-md-12">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
-                  <label for="floatingName">Name of Client</label>
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            <div class="row">
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card sales-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
+
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Requests <br><span>This Week</span>
+                    </h5>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-cart"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>15</h6>
+                        <span class="text-muted small pt-2 ps-1">requests</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- End Sales Card -->
 
-              <div class="col-md-6">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email">
-                  <label for="floatingEmail">Client Email</label>
-                </div>
-            </div>
+              <!-- Revenue Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card revenue-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
 
-            <div class="col-md-6">
-                <div class="form-floating">
-                  <input type="number" class="form-control" id="floatingNumber" placeholder="Contact Number">
-                  <label for="floatingPassword">Client Phone Number</label>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Pending Attention<br> <span>This Week</span>
+                      <br>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-currency-dollar"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>45</h6>
+                        <span class="text-muted small pt-2 ps-1">requests</span>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- End Revenue Card -->
 
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                  <select class="form-select" id="floatingSelect" aria-label="State" required>
-                    <option value=""></option>
-                    <option value="1">Low</option>
-                    <option value="2">Medium</option>
-                    <option value="3">High</option>
-                  </select>
-                  <label for="floatingSelect">Urgency</label>
+              <!-- Customers Card -->
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card customers-card">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
+
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Requests Completed<br> <span> This Month</span>
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>20</h6>
+                        <span class="text-muted small pt-2 ps-1">increase</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>                
+              <!-- Recent Sales -->
+              <div class="col-12">
+                <div class="card recent-sales overflow-auto">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"
+                      ><i class="bi bi-three-dots"></i
+                    ></a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"
+                    >
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
 
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                  <select class="form-select" id="floatingSelect" aria-label="State" required>
-                    <option value=""selected></option>
-                    <option value="1">Administrative</option>
-                    <option value="2">AGM</option>
-                    <option value="3">Conveyancing</option>
-                    <option value="3">Corporate</option>
-                    <option value="3">Corporate Law</option>
-                    <option value="3">Deed Poll</option>
-                    <option value="3">Dispute Resolution</option>
-                    <option value="3">Divorce (Uncontested)</option>
-                    <option value="3">Employee Offboarding</option>
-                    <option value="3">Employment</option>
-                    <option value="3">Family</option>
-                    <option value="3">Financial Services</option>
-                    <option value="3">Insurance Claims</option>
-                    <option value="3">Intellectual Property(IP), Media & Technology</option>
-                    <option value="3">Litigation</option>
-                    <option value="3">Personal Injury</option>
-                    <option value="3">Probate</option>
-                    <option value="3">Property Damage</option>
-                    <option value="3">Property Damage & Personal Injury</option>
-                    <option value="3">Real Estate</option>
-                    <option value="3">Tax Filing</option>
-                    <option value="3">Trademark Singapore</option>
-                    <option value="3">Wealth Management</option>
-                  </select>
-                  <label for="floatingSelect">Case Category</label>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Requests</h5>
+
+                    <table class="table table-borderless datatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">Case File#</th>
+                          <th scope="col">Lawyer Assigned</th>
+                          <th scope="col">Request</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">New Updates</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><a href="#">#1</a></th>
+                          <td>Brandon Jacob</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >At praesentium minu</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-success">Completed</span>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2</a></th>
+                          <td>Bridie Kessler</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >Blanditiis dolor omnis similique</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-warning">In progress</span>
+                          </td>
+                          <td><span class="badge bg-success">Yes</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#3</a></th>
+                          <td>Ashleigh Langosh</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >At recusandae consectetur</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-success">Completed</span>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#4</a></th>
+                          <td>Angus Grady</td>
+                          <td>
+                            <a href="#" class="text-primar"
+                              >Ut voluptatem id earum et</a
+                            >
+                          </td>
+                          <td><span class="badge bg-danger">Rejected</span></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#5</a></th>
+                          <td>Raheem Lehner</td>
+                          <td>
+                            <a href="#" class="text-primary"
+                              >Sunt similique distinctio</a
+                            >
+                          </td>
+                          <td>
+                            <span class="badge bg-warning">In progress</span>
+                          </td>
+                          <td><span class="badge bg-danger">No</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+              </div>
+              <!-- End Recent Sales -->
             </div>
+          </div>
+          <!-- End Left side columns -->
 
-            <div class="col-12">
-                <input class="form-control" type="file" id="formFile" multiple>
-            </div>
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+            <!-- News & Updates Traffic -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
 
-            <div class="col-12">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Case Description" id="floatingTextarea" style="height: 100px;"></textarea>
-                  <label for="floatingTextarea">Case Description</label>
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+                </ul>
+              </div>
+
+              <div class="card-body pb-0">
+                <h5 class="card-title">Notifications <span>| Today</span></h5>
+
+                <div class="news-2">
+                  <h4>Completed Requests</h4>
+                  <p><a href="#">Case File #69420 is recently completed</a></p>
+
+                  <h4>Updates on Requests</h4>
+                  <p><a href="#">Lawyer of Case File #12351 has requested more documents</a> </p>
+                  <p><a href="#">Case File #56567 has been rejected</a></p>
+
+                  <h4>Submitted Requests</h4>
+                  <p><a href="#">Case File #12345 is successfully submitted</a></p>
+                  </div>
                 </div>
+              </div>
             </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn btn-secondary">Reset</button>
-            </div>
-          </form><!-- End floating Labels Form -->
-      
+            <!-- End News & Updates -->
+          </div>
+          <!-- End Right side columns -->
+        </div>
+      </section>
     </main>
     <!-- End #main -->
 
