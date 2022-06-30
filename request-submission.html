@@ -253,7 +253,7 @@
           <h5 class="card-title">Fill up the form below and the legal department will get back to you.</h5>
 
           <!-- Floating Labels Form -->
-          <form class="row g-3">
+          <form class="row g-3" id="newRequest">
             <div class="col-md-12">
                 <div class="form-floating">
                   <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
@@ -277,11 +277,11 @@
 
             <div class="col-md-6">
                 <div class="form-floating mb-3">
-                  <select class="form-select" id="floatingSelect" aria-label="State" required>
+                  <select class="form-select" id="floatingUrgency" aria-label="State" required>
                     <option value=""></option>
-                    <option value="1">Low</option>
-                    <option value="2">Medium</option>
-                    <option value="3">High</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
                   </select>
                   <label for="floatingSelect">Urgency</label>
                 </div>
@@ -291,29 +291,11 @@
                 <div class="form-floating mb-3">
                   <select class="form-select" id="floatingSelect" aria-label="State" required>
                     <option value=""selected></option>
-                    <option value="1">Administrative</option>
-                    <option value="2">AGM</option>
-                    <option value="3">Conveyancing</option>
-                    <option value="3">Corporate</option>
-                    <option value="3">Corporate Law</option>
-                    <option value="3">Deed Poll</option>
-                    <option value="3">Dispute Resolution</option>
-                    <option value="3">Divorce (Uncontested)</option>
-                    <option value="3">Employee Offboarding</option>
-                    <option value="3">Employment</option>
-                    <option value="3">Family</option>
-                    <option value="3">Financial Services</option>
-                    <option value="3">Insurance Claims</option>
-                    <option value="3">Intellectual Property(IP), Media & Technology</option>
-                    <option value="3">Litigation</option>
-                    <option value="3">Personal Injury</option>
-                    <option value="3">Probate</option>
-                    <option value="3">Property Damage</option>
-                    <option value="3">Property Damage & Personal Injury</option>
-                    <option value="3">Real Estate</option>
-                    <option value="3">Tax Filing</option>
-                    <option value="3">Trademark Singapore</option>
-                    <option value="3">Wealth Management</option>
+                    <option value="Sales & Purchase Agreement">Sales & Purchase Agreement</option>
+                    <option value="Contract (Drafting)">Contract (Drafting)</option>
+                    <option value="Contract (Checking of Terms)">Contract (Checking of Terms)</option>
+                    <option value="Custom">Custom</option>
+
                   </select>
                   <label for="floatingSelect">Case Category</label>
                 </div>
@@ -370,8 +352,11 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script type="module" src="assets/firebase/link.js"></script>
+    
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
   </body>
 </html>
