@@ -49,13 +49,32 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="request-submission.html" class="logo d-flex align-items-center">
+        <a href="lawyer-dashboard.html" class="logo d-flex align-items-center">
           <img src="assets/img/logo.png" alt="" />
           <span class="d-none d-lg-block">Jura</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
       <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
 
       <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
@@ -140,7 +159,6 @@
             <!-- End Notification Dropdown Items -->
           </li>
           <!-- End Notification Nav -->
-          <!-- Profile Nav -->
           <li class="nav-item dropdown pe-3">
             <a
               class="nav-link nav-profile d-flex align-items-center pe-0"
@@ -161,8 +179,8 @@
               class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
             >
               <li class="dropdown-header">
-                <h6>Charlie Lim</h6>
-                <span>Cybersecurity Engineer</span>
+                <h6>Sylvester Choy</h6>
+                <span>Cybersecuirty Engineer</span>
               </li>
               <li>
                 <hr class="dropdown-divider" />
@@ -224,7 +242,7 @@
     <!-- End Header -->
 
     <!-- ======= Sidebar ======= -->
-        <aside id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
           <a class="nav-link collapsed" href="client-dashboard.html">
@@ -233,7 +251,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="request-submission.html">
+          <a class="nav-link collapsed" href="request-submission.html">
             <i class="bi bi-envelope"></i>
             <span>Submit a new request</span>
           </a>
@@ -242,82 +260,176 @@
       </ul>
     </aside>
     <!-- End Sidebar-->
+  
 
     <main id="main" class="main">
       <div class="pagetitle">
-        <h1>Submit a new request</h1>
+        <h1>Case #56567</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="request-viewing.html">Requests</a>
+            </li>
+            <li class="breadcrumb-item active">#56567</li>
+          </ol>
+        </nav>
       </div>
       <!-- End Page Title -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Fill up the form below and the legal department will get back to you.</h5>
 
-          <!-- Floating Labels Form -->
-          <form class="row g-3" id="newRequest">
-            <div class="col-md-12">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
-                  <label for="floatingName">Name of Client</label>
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            <div class="row">
+            
+              <!-- Request details -->
+              <div class="col-12">
+                <div class="card recent-sales overflow-auto">
+                
+
+                  <div class="card-body">
+                    <h5 class="card-title"> Request Information <span>| <a href="case56567-client-update.html">Update Request</a></span></h5>
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Completed %</label>
+                        <div class="col-sm-10">
+                            <div class="progress mt-3">
+                                <div class="progress-bar progress-bar-striped bg-info " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                
+                              </div>
+                        </div>
+                      </div>
+
+                    <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Case Number</label>
+                        <div class="col-sm-10">
+                          <p class="form-control" value="" style="border:0px;">#56567</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Title</label>
+                        <div class="col-sm-10">
+                            <p class="form-control" value="" style="border:0px;">Professional negligence check</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Priority</label>
+                        <div class="col-sm-10">
+                          <p class="form-control" value="" style="border:0px;">Low</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Status</label>
+                        <div class="col-sm-10">
+                            <p class="form-control" value="" style="border:0px;">Rejected</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                      
+                      
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Assigned Lawyer</label>
+                        <div class="col-sm-10"><p class="form-control" value="" style="border:0px;">Tom Thompson</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Summary</label>
+                        <div class="col-sm-10">
+                            <p class="form-control" value="" style="border:0px;">Professional negligence check of employee Timmy Tan</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Attachments</label>
+                        <div class="col-sm-10">
+                          <p class="form-control" value="" style="border:0px;"><a href="/assets/files/professional_negligence_check_timmy_tan.pdf">professional_negligence_check_timmy_tan.pdf</a></p>
+                          
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                      
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label" style="color:grey;">Last Update</label>
+                        <div class="col-sm-10">
+                            <p class="form-control" value="" style="border:0px;">12/06/2022</p>
+                          <!-- <input type="text" class="form-control"> -->
+                        </div>
+                      </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-md-6">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email">
-                  <label for="floatingEmail">Client Email</label>
-                </div>
+              <!-- End Request details -->
+              
             </div>
+          </div>
+          <!-- End Left side columns -->
 
-            <div class="col-md-6">
-                <div class="form-floating">
-                  <input type="number" class="form-control" id="floatingNumber" placeholder="Contact Number">
-                  <label for="floatingPassword">Client Phone Number</label>
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+            <!-- Comments -->
+            <div class="card">
+              <div class="card-body pb-0">
+                <h3 class="card-title"> Comments <span>| T. Thompson </span></h3>
+
+                <div class="news-2">
+
+
+                  <h4>9/06/2022</h4>
+                  <p>Missing case evidence #56567.</p>
+                    <h4>
+                      7/06/2022
+                    </h4>
+                    <p>
+                      Case changed to low priority.
+                    </p>
+                    <p> 
+                      <!-- <form>
+                          <label for="fname"><h6> Add Comment: </h6> </label>
+                          <br>
+                          <input type="text" id="fname" name="fname" value="">
+                      </form> -->
+                    </p>
+                  </div>
                 </div>
               </div>
+                <!-- End comments -->
+            <!-- Request History -->
+            <div class="card">
+              
 
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                  <select class="form-select" id="floatingUrgency" aria-label="State" required>
-                    <option value=""></option>
-                    <option value="Low">Low</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                  </select>
-                  <label for="floatingSelect">Urgency</label>
+              <div class="card-body pb-0">
+                <h3 class="card-title"> Request History </h3>
+
+                <div class="news-2">
+                  <h4>12/06/2022</h4>
+                  
+                  <p>Rejected</p>
+
+                  <h4>10/06/2022</h4>
+                  <p>Documents received from client</p>
+                    <h4>8/06/2022</h4>
+                    <p>Request accpeted by T. Thompson
+                    </p>
+                    <h4>7/06/2022</h4>
+                    <p>Request created by Sylvester Choy.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            
+                    <!-- End request history -->
+                 
             </div>
-
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                  <select class="form-select" id="floatingSelect" aria-label="State" required>
-                    <option value=""selected></option>
-                    <option value="Sales & Purchase Agreement">Sales & Purchase Agreement</option>
-                    <option value="Contract (Drafting)">Contract (Drafting)</option>
-                    <option value="Contract (Checking of Terms)">Contract (Checking of Terms)</option>
-                    <option value="Custom">Custom</option>
-
-                  </select>
-                  <label for="floatingSelect">Case Category</label>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <input class="form-control" type="file" id="formFile" multiple>
-            </div>
-
-            <div class="col-12">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Case Description" id="floatingTextarea" style="height: 100px;"></textarea>
-                  <label for="floatingTextarea">Case Description</label>
-                </div>
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn btn-secondary">Reset</button>
-            </div>
-          </form><!-- End floating Labels Form -->
-      
+          
+          </div>
+          <!-- End Right side columns -->
+        </div>
+      </section>
     </main>
     <!-- End #main -->
 
@@ -352,11 +464,8 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script type="module" src="assets/firebase/link.js"></script>
-    
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
   </body>
 </html>
