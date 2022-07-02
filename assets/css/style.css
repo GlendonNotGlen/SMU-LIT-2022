@@ -726,6 +726,16 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffecdf;
 }
 
+.dashboard .red-card .card-icon {
+  color: #ff2828;
+  background: #ffecdf;
+}
+
+.dashboard .red-card .card-icon {
+  color: #ff2828;
+  background: #ffecdf;
+}
+
 /* Activity */
 .dashboard .activity {
   font-size: 14px;
